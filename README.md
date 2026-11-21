@@ -22,3 +22,10 @@ The DramaBos homepage currently states that its free tier does not require authe
 
 ## Status
 Initial provider source only. It has not yet been built or tested in Vega. The official Vega template build infrastructure and generated dist output still need to be added before installation.
+
+
+## DramaBox (APIShort)
+
+The `dramaBox` provider uses APIShort's DramaBox endpoints for latest, trending, search, details, and episodes. Add your own APIShort key in the provider's Vega settings; the key is stored in the app's provider settings and is not committed to this repository. Playback uses the direct MP4 URLs returned by the episode endpoint. Locked episodes are listed but do not return playable streams.
+
+API base: `https://apishort.com/v1/dramabox/api/dramabox`
