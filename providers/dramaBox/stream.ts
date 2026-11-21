@@ -1,6 +1,6 @@
-import { Stream } from "../types";
+import { ProviderContext, Stream } from "../types";
 import { decodeRef } from "./api";
-export const getStream = async function ({ link }: { link: string; type: string; signal?: AbortSignal; providerContext: any; isDownload?: boolean }): Promise<Stream[]> {
+export const getStream = async function ({ link }: { link: string; type: string; signal?: AbortSignal; providerContext: ProviderContext; isDownload?: boolean }): Promise<Stream[]> {
   const ref = decodeRef<{ urls: Record<string, string>; locked?: boolean }>(link);
   if (ref.locked) return [];
   const streams: Stream[] = []; const seen = new Set<string>();
