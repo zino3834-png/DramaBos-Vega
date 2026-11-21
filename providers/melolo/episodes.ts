@@ -1,5 +1,5 @@
 import { EpisodeLink, ProviderContext } from "../types";
-import { decodeRef, request, unwrapObject } from "./api";
+import { decodeRef, encodeRef, request, unwrapObject } from "./api";
 
 export const getEpisodes = async function ({ url, providerContext }: { url: string; providerContext: ProviderContext }): Promise<EpisodeLink[]> {
   const ref = decodeRef<{ id: string; count?: number }>(url);
