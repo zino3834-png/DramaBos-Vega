@@ -15,5 +15,14 @@
     "type": "global",
     "disabled": false,
     "hasSettings": true
+  },
+  {
+    "display_name": "Melolo (APIShort)",
+    "value": "melolo",
+    "version": "1.0.0",
+    "icon": "",
+    "type": "global",
+    "disabled": false,
+    "hasSettings": true
   }
 ]

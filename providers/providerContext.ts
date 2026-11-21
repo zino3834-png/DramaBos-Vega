@@ -17,7 +17,7 @@ export const providerContext: ProviderContext = {
       cookieMap: {},
       userAgent: "",
       url: url,
-    } as import("./types").OpenWebViewResult);
+    } as any);
   },
   cheerio,
   kvStore: {
