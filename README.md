@@ -29,3 +29,5 @@ Initial provider source only. It has not yet been built or tested in Vega. The o
 The `dramaBox` provider uses APIShort's DramaBox endpoints for latest, trending, search, details, and episodes. Add your own APIShort key in the provider's Vega settings; the key is stored in the app's provider settings and is not committed to this repository. Playback uses the direct MP4 URLs returned by the episode endpoint. Locked episodes are listed but do not return playable streams.
 
 API base: `https://apishort.com/v1/dramabox/api/dramabox`
+
+Build output for the `dramaBox` provider is generated into `dist/dramaBox/` by the repository workflow.
